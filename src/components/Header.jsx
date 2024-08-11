@@ -13,7 +13,7 @@ const Header = () => {
     <header>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
-        <h1>Andrew Emmanuel Alonso Valenzuela</h1>
+        <h1>Andrew Alonso</h1>
       </div>
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
