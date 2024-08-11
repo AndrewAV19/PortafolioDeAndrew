@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.css'; 
 import { FaFacebookF, FaLinkedin, FaYoutube, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -16,6 +15,7 @@ const Footer = () => {
           <ul>
             <li><a href="mailto:andrewav19@outlook.com">andrewav19@outlook.com</a></li>
             <li><a href="https://wa.me/3931062765" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /> 3931062765</a></li>
+            <li><a href="https://alonso-corporation-in-react-s4lw.vercel.app" target="_blank" rel="noopener noreferrer">Mi página web</a></li>
           </ul>
         </div>
         <div className="footer-section">
