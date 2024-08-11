@@ -1,0 +1,114 @@
+header {
+  padding: -20px;
+  background-color: #000000;
+  color: rgb(144, 121, 34);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.menu-toggle {
+  display: none; 
+  background: #e3e8e8;
+  border: none;
+  color: rgb(14, 14, 14);
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 8px 16px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.menu-toggle:hover {
+  background: #3e668f;
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex; /* Muestra el menú en pantallas grandes */
+  align-items: center;
+  justify-content: flex-end; /* Alinea el menú a la derecha */
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  display: inline-block;
+  color: rgb(144, 121, 34);
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #b3b2b2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+    flex-direction: column;
+    width: 75%;
+    background-color: #000000;
+    position: absolute;
+    top: 100%; /* Ajusta para que el menú esté debajo del header */
+    left: 0;
+    max-height: 0; /* Oculta el menú por defecto */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease; /* Transición para deslizamiento */
+    padding: 5px; /* Añade padding en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el botón en pantallas pequeñas */
+  }
+
+  .nav.open {
+    display: flex; /* Muestra el menú cuando está abierto */
+    max-height: 500px; /* Ajusta el valor según el tamaño de tu menú */
+    opacity: 1; /* Hace el menú visible */
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Añade margen vertical entre los elementos del menú */
+    padding: 10px 15px; /* Añade padding a los elementos del menú */
+    color: rgb(144, 121, 34); /* Fondo de cada elemento del menú */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave del fondo */
+  }
+
+  .nav-item:hover {
+    background-color: rgb(144, 121, 34); /* Fondo cuando se pasa el mouse */
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 18px; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,23 @@
+.imagen-destacada {
+  width: 100%; 
+  display: flex;
+  justify-content: space-around; 
+  background-color: #000;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.imagen-destacada img {
+  width: 35%; 
+  max-width: 1200px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease; 
+  margin-bottom: 20px; 
+}
+
+.imagen-destacada img:hover {
+  transform: scale(1.05);
+}

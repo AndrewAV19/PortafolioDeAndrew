@@ -1,0 +1,69 @@
+.nuestros-trabajos {
+    padding: 40px 20px;
+    background-color: #e3dcdc;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap; 
+  }
+  
+  .titulo {
+    font-size: 2em;
+    color: rgb(0, 0, 0); 
+    margin-bottom: 20px;
+  }
+  
+  .trabajos-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  .trabajo {
+    flex: 1;
+    max-width: 300px;
+    background-color: #eee8e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .trabajo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .trabajo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .trabajo-img:hover {
+    transform: scale(1.0); 
+  }
+  
+  .trabajo h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .trabajo p {
+    font-size: 1em;
+    color: #666;
+  }
+  .trabajo a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto del enlace */
+  }
+  
+  .trabajo a:hover {
+    color: inherit; /* Mantiene el color del enlace al pasar el ratón */
+  }
+  
+  

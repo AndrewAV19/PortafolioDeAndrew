@@ -1,0 +1,20 @@
+.acerca-de {
+  padding: 40px 20px;
+  background-color: #e9e7e7; 
+  text-align: center; 
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  font-size: 2em;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  font-size: 1.2em;
+  color: #666; 
+  line-height: 1.6; 
+  max-width: 800px; 
+  margin: 0 auto; }
