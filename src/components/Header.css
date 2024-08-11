@@ -1,5 +1,5 @@
 header {
-  padding: 0 20px;
+  padding: -20px;
   background-color: #000000;
   color: rgb(144, 121, 34);
   text-align: center;
@@ -74,7 +74,7 @@ header {
   .nav {
     display: none; /* Oculta el menú por defecto en pantallas pequeñas */
     flex-direction: column;
-    width: 100%; /* Ajusta el ancho del menú para que ocupe todo el ancho disponible */
+    width: 75%;
     background-color: #000000;
     position: absolute;
     top: 100%; /* Ajusta para que el menú esté debajo del header */
@@ -110,20 +110,5 @@ header {
   .nav-link {
     color: white;
     font-size: 18px; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    height: 50px; /* Reduce el tamaño del logo en pantallas más pequeñas */
-  }
-
-  .nav-link {
-    font-size: 16px; /* Ajusta el tamaño de la fuente en pantallas aún más pequeñas */
-  }
-
-  .menu-toggle {
-    font-size: 20px; /* Ajusta el tamaño del botón del menú */
-    padding: 6px 12px; /* Reduce el padding del botón del menú */
   }
 }
