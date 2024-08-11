@@ -1,42 +1,36 @@
 .presentacion {
-    padding: 80px 20px;
-    background-color: #000000; 
-    text-align: center;
-    width: 100%;
-    flex-wrap: wrap;
+  padding: 120px 20px 80px; /* Ajusta el padding superior para evitar la superposición */
+  background-color: #000000;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .presentacion {
+    padding-top: 100px; /* Ajuste para pantallas medianas */
   }
-  
+
   .presentacion h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #b5aeae; /* Color de texto oscuro */
+    font-size: 2rem;
   }
-  
+
   .presentacion p {
-    font-size: 1.25rem;
-    color: rgb(144, 121, 34); /* Color de texto gris */
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1rem;
   }
-  
-  /* Media queries para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .presentacion h2 {
-      font-size: 2rem;
-    }
-  
-    .presentacion p {
-      font-size: 1rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .presentacion {
+    padding-top: 90px; /* Ajuste para pantallas pequeñas */
   }
-  
-  @media (max-width: 480px) {
-    .presentacion h2 {
-      font-size: 1.5rem;
-    }
-  
-    .presentacion p {
-      font-size: 0.875rem;
-    }
+
+  .presentacion h2 {
+    font-size: 1.5rem;
   }
-  
+
+  .presentacion p {
+    font-size: 0.875rem;
+  }
+}
